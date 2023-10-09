@@ -3,33 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <title>Pos System</title>
-    <link rel="stylesheet" href="assets/css/normalize.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+          integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
     <link rel="stylesheet" href="assets/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/style_home.css">
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg nav_bar">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">LOGO</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand logo" href="index.html">LOGO</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link nav_items" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Customers</a>
+                    <a class="nav-link nav_items" href="customers.html">Customers</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="">items</a>
+                <li class="nav-item nav_items">
+                    <a class="nav-link nav_items" href="items.html">items</a>
+                </li>
+                <li class="nav-item nav_items">
+                    <a class="nav-link nav_items" href="orders.html">Orders</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
+
+<div class="background">
+    <div class="container">
+        <div class="row">
+
+            <div class="col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+                <div class="menu_card">
+                    <i class="bi bi-box-seam menu_item_1"></i>
+                    <h4>Items</h4>
+                    <h4>1450</h4>
+                    <h4>(+84)</h4>
+                </div>
+            </div>
+
+            <div class="col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+                <div class="menu_card">
+                    <i class="bi bi-people-fill menu_item_2"></i>
+                    <h4>Items</h4>
+                    <h4>1450</h4>
+                    <h4>(+84)</h4>
+                </div>
+            </div>
+
+            <div class="col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+                <div class="menu_card">
+                    <i class="bi bi-cart-plus menu_item_3"></i>
+                    <h4>Items</h4>
+                    <h4>1450</h4>
+                    <h4>(+84)</h4>
+                </div>
+            </div>
+
+            <div class="col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+                <div class="menu_card">
+                    <i class="bi bi-coin menu_item_4"></i>
+                    <h4>Items</h4>
+                    <h4>1450</h4>
+                    <h4>(+84)</h4>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
 
 <script src="assets/lib/bootstrap/js/bootstrap.min.js"></script>
 </body>

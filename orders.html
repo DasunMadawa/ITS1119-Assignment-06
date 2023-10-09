@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Orders</title>
+
+    <link rel="stylesheet" href="assets/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style_orders.css">
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg nav_bar">
+    <div class="container-fluid">
+        <a class="navbar-brand logo" href="index.html">LOGO</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link nav_items" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav_items" href="customers.html">Customers</a>
+                </li>
+                <li class="nav-item nav_items">
+                    <a class="nav-link nav_items" href="items.html">items</a>
+                </li>
+                <li class="nav-item nav_items">
+                    <a class="nav-link nav_items" href="orders.html">Orders</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="background">
+    <div class="container">
+        <div class="row">
+
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 col-xxl-4">
+
+                <!--                order   -->
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <div class="order_card">
+                        <h4>Order</h4>
+                        <div class="row">
+                            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-6 mb-3">
+                                <label for="o_id" class="form-label">Order Id</label>
+                                <input type="text" class="form-control" id="o_id"
+                                       placeholder="">
+                            </div>
+                            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-6 mb-3">
+                                <label for="date" class="form-label">Customer Id</label>
+                                <input type="date" class="form-control" id="date"
+                                       placeholder="">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--                customer    -->
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <div class="customer_card">
+                        <h4>Customer</h4>
+                        <div class="row">
+                            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-6 mb-3">
+                                <label for="customers">Choose a Customer:</label>
+                                <select class="form-select" aria-label="Default select example" id="customers">
+                                    <option value="C001">C001</option>
+                                    <option value="C002">C002</option>
+                                    <option value="C001">C003</option>
+                                </select>
+                            </div>
+                            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-6 mb-3">
+                                <label for="c_name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="c_name"
+                                       placeholder="">
+                            </div>
+                            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-6 mb-3">
+                                <label for="c_address" class="form-label">Address</label>
+                                <input type="text" class="form-control" id="c_address"
+                                       placeholder="">
+                            </div>
+                            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-6 mb-3">
+                                <label for="c_salary" class="form-label">salary</label>
+                                <input type="text" class="form-control" id="c_salary"
+                                       placeholder="">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!--            item    -->
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xxl-4">
+                <div class="item_card">
+                    <h4>Item</h4>
+                    <div class="row">
+                        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-6 mb-3">
+                            <label for="items">Choose a Item:</label>
+                            <select class="form-select" aria-label="Default select example" id="items">
+                                <option value="C001">C001</option>
+                                <option value="C002">C002</option>
+                                <option value="C001">C003</option>
+                            </select>
+                        </div>
+                        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-6 mb-3">
+                            <label for="i_name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="i_name"
+                                   placeholder="">
+                        </div>
+                        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-6 mb-3">
+                            <label for="i_price" class="form-label">Price</label>
+                            <input type="text" class="form-control" id="i_price"
+                                   placeholder="">
+                        </div>
+                        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-6 mb-3">
+                            <label for="i_qty_on_hand" class="form-label">Qty On Hand</label>
+                            <input type="text" class="form-control" id="i_qty_on_hand"
+                                   placeholder="">
+                        </div>
+                        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-6 mb-3">
+                            <label for="i_qty" class="form-label">Qty</label>
+                            <input type="text" class="form-control" id="i_qty"
+                                   placeholder="">
+                        </div>
+
+                        <button type="button"
+                                class="col col-4 col-sm4 col-md-4 col-lg-4 col-xl-4 col-xxl-6 btn btn-primary add_item_btn">
+                            Add new
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--            total   -->
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4">
+                <div class="order_card">
+                    <h4 class="col col-10">Total : 0/=</h4>
+                    <h4 class="col col-10">Sub Total : 0/=</h4>
+                    <div class="row">
+                        <div class="col col-5 col-sm-5 col-md-5 col-lg-8 col-xl-8 col-xxl-8 mb-3">
+                            <label for="cash" class="form-label">Cash</label>
+                            <input type="text" class="form-control" id="cash"
+                                   placeholder="">
+                        </div>
+                        <div class="col col-2 col-sm-2 col-md-2 col-lg-4 col-xl-4 col-xxl-4 mb-3">
+                            <label for="discount" class="form-label">Discount</label>
+                            <input type="text" class="form-control" id="discount"
+                                   placeholder="">
+                        </div>
+                        <div class="col col-5 col-sm-5 col-md-5 col-lg-12 col-xl-12 col-xxl-12 mb-3">
+                            <label for="balance" class="form-label">Discount</label>
+                            <input type="text" class="form-control" id="balance"
+                                   placeholder="">
+                        </div>
+                        <button type="button"
+                                class="col col-4 col-sm4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 btn btn-primary purchase_btn">
+                            Purchase
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!--        table   -->
+        <div class="row">
+
+            <div class="col table_card">
+                <table class="table table-bordered">
+                    <thead>
+                    <th>Code</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Qty</th>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                        <td>01</td>
+                        <td>Shampoo</td>
+                        <td>150</td>
+                        <td>23</td>
+                    </tr>
+                    <tr>
+                        <td>01</td>
+                        <td>Shampoo</td>
+                        <td>150</td>
+                        <td>23</td>
+                    </tr>
+                    <tr>
+                        <td>01</td>
+                        <td>Shampoo</td>
+                        <td>150</td>
+                        <td>23</td>
+                    </tr>
+                    <tr>
+                        <td>01</td>
+                        <td>Shampoo</td>
+                        <td>150</td>
+                        <td>23</td>
+                    </tr>
+                    <tr>
+                        <td>01</td>
+                        <td>Shampoo</td>
+                        <td>150</td>
+                        <td>23</td>
+                    </tr>
+                    <tr>
+                        <td>01</td>
+                        <td>Shampoo</td>
+                        <td>150</td>
+                        <td>23</td>
+                    </tr>
+                    <tr>
+                        <td>01</td>
+                        <td>Shampoo</td>
+                        <td>150</td>
+                        <td>23</td>
+                    </tr>
+                    <tr>
+                        <td>01</td>
+                        <td>Shampoo</td>
+                        <td>150</td>
+                        <td>23</td>
+                    </tr>
+                    <tr>
+                        <td>01</td>
+                        <td>Shampoo</td>
+                        <td>150</td>
+                        <td>23</td>
+                    </tr>
+                    <tr>
+                        <td>01</td>
+                        <td>Shampoo</td>
+                        <td>150</td>
+                        <td>23</td>
+                    </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="assets/lib/bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>
